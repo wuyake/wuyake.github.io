@@ -95,6 +95,8 @@
 
 <p>原始值要访问属性和方法的结果是undefined,字符串有lenth属性</p>
 <h2 id="7，包装类"><a href="#7，包装类" class="headerlink" title="7，包装类"></a>7，包装类</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var num = 4;</span><br><span class="line">num.len = 2;  系统检测原始值没有属性和方法 然后给你new Number(4).lenth = 2; 然后销毁 delete</span><br><span class="line"></span><br><span class="line">console.log(num.len) 系统检测原始值要访问属性方法 给你new Number(4)查看.lenth属性，由于没设置属性所以返回结果为undefind</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
